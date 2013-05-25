@@ -1,0 +1,236 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE3902B51750BD76005F96CF /* ALUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3902B41750BD76005F96CF /* ALUT.framework */; };
+		BE40E71D16168B7F005AEC18 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = BE40E71C16168B7F005AEC18 /* main.c */; };
+		BE40E72616168B9A005AEC18 /* ping.c in Sources */ = {isa = PBXBuildFile; fileRef = BE40E72516168B9A005AEC18 /* ping.c */; };
+		BE40E77B16169125005AEC18 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE40E77A16169125005AEC18 /* OpenAL.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BE40E71616168B7F005AEC18 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BE3902B41750BD76005F96CF /* ALUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ALUT.framework; sourceTree = "<group>"; };
+		BE40E71816168B7F005AEC18 /* beatping */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = beatping; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE40E71C16168B7F005AEC18 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		BE40E72516168B9A005AEC18 /* ping.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ping.c; sourceTree = "<group>"; };
+		BE40E77A16169125005AEC18 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		BE40E78816169867005AEC18 /* beatping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = beatping.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE40E71516168B7F005AEC18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE40E77B16169125005AEC18 /* OpenAL.framework in Frameworks */,
+				BE3902B51750BD76005F96CF /* ALUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE40E70D16168B7F005AEC18 = {
+			isa = PBXGroup;
+			children = (
+				BE3902B41750BD76005F96CF /* ALUT.framework */,
+				BE40E77A16169125005AEC18 /* OpenAL.framework */,
+				BE40E71B16168B7F005AEC18 /* src */,
+				BE40E71916168B7F005AEC18 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE40E71916168B7F005AEC18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE40E71816168B7F005AEC18 /* beatping */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE40E71B16168B7F005AEC18 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				BE40E78816169867005AEC18 /* beatping.h */,
+				BE40E71C16168B7F005AEC18 /* main.c */,
+				BE40E72516168B9A005AEC18 /* ping.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE40E71716168B7F005AEC18 /* beatping */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE40E72216168B7F005AEC18 /* Build configuration list for PBXNativeTarget "beatping" */;
+			buildPhases = (
+				BE40E71416168B7F005AEC18 /* Sources */,
+				BE40E71516168B7F005AEC18 /* Frameworks */,
+				BE40E71616168B7F005AEC18 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = beatping;
+			productName = pingbeats;
+			productReference = BE40E71816168B7F005AEC18 /* beatping */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE40E70F16168B7F005AEC18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = peroxyacyl;
+			};
+			buildConfigurationList = BE40E71216168B7F005AEC18 /* Build configuration list for PBXProject "beatping" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BE40E70D16168B7F005AEC18;
+			productRefGroup = BE40E71916168B7F005AEC18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE40E71716168B7F005AEC18 /* beatping */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE40E71416168B7F005AEC18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE40E71D16168B7F005AEC18 /* main.c in Sources */,
+				BE40E72616168B9A005AEC18 /* ping.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BE40E72016168B7F005AEC18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BE40E72116168B7F005AEC18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BE40E72316168B7F005AEC18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				HEADER_SEARCH_PATHS = "";
+				PRODUCT_NAME = beatping;
+			};
+			name = Debug;
+		};
+		BE40E72416168B7F005AEC18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				HEADER_SEARCH_PATHS = "";
+				PRODUCT_NAME = beatping;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE40E71216168B7F005AEC18 /* Build configuration list for PBXProject "beatping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE40E72016168B7F005AEC18 /* Debug */,
+				BE40E72116168B7F005AEC18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE40E72216168B7F005AEC18 /* Build configuration list for PBXNativeTarget "beatping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE40E72316168B7F005AEC18 /* Debug */,
+				BE40E72416168B7F005AEC18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE40E70F16168B7F005AEC18 /* Project object */;
+}

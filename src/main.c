@@ -59,10 +59,22 @@ void *sound_thread(void *info) {
 
 int main(int argc, const char * argv[])
 {
+    char ch = NULL;
+    int silent = 0;
+    while ((ch = getopt(argc, argv, "H")) != -1)
+	{
+		switch(ch) {
+            case 'H':
+                silent = 1;
+                break;
+            default:
+                break;
+        }
+    }
     pthread_t thread;
-    pthread_create( &thread, NULL, sound_thread, NULL);
+    if (silent == 0) pthread_create( &thread, NULL, sound_thread, NULL);
     ping_main(argc, argv);
     should_quit = 1;
-    pthread_join(thread, NULL);
+    if (silent == 0) pthread_join(thread, NULL);
     return 0;
 }
